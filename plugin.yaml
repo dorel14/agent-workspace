@@ -1,0 +1,19 @@
+name: agent-workspace
+version: "0.1.0"
+manifest_version: 2
+api_version: 1
+kind: standalone
+requires_hermes: ">=0.23.0"
+description: "Configure an agent's workspace folder via the dashboard UI. When set, updates terminal.cwd for the profile."
+maintainer: NousResearch
+category: tools
+tags:
+  - workspace
+  - agent
+  - configuration
+  - dashboard
+config_schema:
+  workspace_folder:
+    type: string
+    required: false
+    description: "Workspace folder for this agent profile. When set, updates terminal.cwd. Leave empty to disable."
